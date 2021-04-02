@@ -303,10 +303,11 @@ progress {
 #sidenav{
   display: none;
 }
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 768px) and (min-width:450px){
   header{
     background: url('../img/header-background.png');
     background-size: cover;
+
   }
   .menu a{display: none;}
   .logo{
@@ -408,3 +409,123 @@ progress {
   }
 }
 
+
+@media only screen and (max-device-width: 450px){
+  header{
+    background: lightseagreen;
+    display: none;
+    clip-path: none;
+  }
+  .menu a{display: none;}
+  .logo{
+    padding-left: 150px;
+  }
+  .text{
+    margin-left: 50px;
+  }
+  .about-left {
+    flex-basis: 100%;
+  }
+  .about-left img {
+    width: 100%;
+    padding: 50px;
+  }
+  .about-right {
+    flex-basis: 100%;
+  }
+  .skills-left {
+    flex-basis: 100%;
+    text-align: justify;
+  }
+  .skills-right {
+    flex-basis: 100%;
+  }
+  .pr-div {
+    width: 100%;
+  }
+  .pr-div p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .edu-box {
+    flex-basis: 100%;
+    text-align: center;
+    box-shadow: 2px 3px 5px grey;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(233, 226, 218);
+  }
+  .edu-box img{
+    width: 60%;
+  }
+  .contact-left {
+    flex-basis: 100%;
+    
+  }
+  .contact-left img {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(120deg,#e62711,#e25545,#88e464,black);
+    border-radius: 30px;
+  }
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .contact-right form input{
+    width: 90%;
+  }
+  .contact-right form textarea {
+    width: 90%;
+  }
+  .social-icons{
+    margin-left: 10px;
+  }
+  #sidenav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100vh;
+    background: rgba(11,88,11, 0.8);
+    padding: 100px 0px;
+    transition: 0.4s;
+    display: block;
+
+  }
+  #sidenav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin:10px 10px;
+    padding: 20px;
+    display: block;
+  }
+  #sidenav a:hover{
+    background: linear-gradient(70deg,rgb(226, 38, 38),rgb(201, 107, 107));
+    border-radius: 25px;
+  }
+  #menubar{
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    width: 50px;
+    cursor: pointer;
+
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width:768px){
+  .menu {
+    margin-right: 10px;
+  }
+  .menu a {
+    padding: 10px 5px;
+    margin: 5px 2px;
+    font-size: 15px;
+    
+  }
+  .logo {
+    padding-left: 40px;
+  }
+}
