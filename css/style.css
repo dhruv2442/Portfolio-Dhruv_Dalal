@@ -312,6 +312,7 @@ progress {
   .menu a{display: none;}
   .logo{
     margin-left: 70px;
+    padding-left: 70px;
   }
   .text{
     margin-left: 40px;
