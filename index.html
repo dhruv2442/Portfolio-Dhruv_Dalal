@@ -5,18 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
-      rel="stylesheet"
-    />
+    <script src="js/typed.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/custom.js"></script>
-    <title>Portfolio</title>
+    <title>Dhruv Dalal | PortFolio</title>
   </head>
   <body onload="myFunction()">
     <div id="loading"></div>
@@ -34,7 +29,7 @@
       <div class="text">
         <p>Hello, I am</p>
         <h1>Dhruv Dalal</h1>
-        <p>And I am a  FLUTTER Enthusiast <span id="any" style="color: chocolate"></span></p>
+        <p>And I am a <span id="any" style="color: chocolate"></span></p>
         <button class="c-btn">Hire me</button>
       </div>
     </header>
@@ -62,7 +57,7 @@
           <img src="img/about.svg" alt="" />
         </div>
         <div class="about-right">
-          <p id="p1">Hello, I'm Dhruv & I'm a FLUTTER Enthusiast</p>
+          <p id="p1">Hello, I'm Dhruv & I'm a <span id="ani" style="color: chocolate"></span></p>
           <br />
           <p id="p2">
             I am Dhruv Dalal ,currently in 2<sup>nd</sup> year in Computer Science And Engineering in Babaria Institute Of Technology.I am a Flutter Enthusiast who loves to make app with Flutter Framework.I am Campus Ambassador @ Collegedunia.com .I am also interested in web developement. I love to develop new skills......
@@ -215,24 +210,24 @@
       </div>
     </section>
 
-    <script src="js/jquery.ripples-min.js"></script>
     <script>
-      jQuery(document).ready(function () {
-        $('header').ripples({
-          dropRadius: 20,
-          perturbance: 0.03,
-        });
-      });
+      let animate=new Typed('#any',{
+        strings:["Front End Developer","Flutter Enthusiast","App Developer","Web Developer","Coder","Campus Ambassador At Collegedunia.com"],
+        typeSpeed:80,
+        backSpeed:80,
+        loop:true,
+      })
     </script>
     <script>
-      // $(document).ready(function(){
-        // 	$('div#loading').removeAttr('id');
-      // });
+      let animate2=new Typed('#ani',{
+        strings:["Front End Developer","Flutter Enthusiast","App Developer","Web Developer","Coder","Campus Ambassador At Collegedunia.com"],
+        typeSpeed:80,
+        backSpeed:80,
+        loop:true,
+      })
+    </script>
+    <script>
       var preloader = document.getElementById("loading");
-      // window.addEventListener('load', function(){
-      // 	preloader.style.display = 'none';
-      // 	})
-  
       function myFunction(){
         preloader.style.display = 'none';
       };
