@@ -20,7 +20,7 @@ header {
   background-size: 50% 100%, cover;
   background-position: right, center;
   background-attachment: fixed;
-  clip-path: polygon(
+  /* clip-path: polygon(
     50% 0%,
     100% 0,
     100% 43%,
@@ -30,7 +30,7 @@ header {
     0 88%,
     0% 43%,
     0 0
-  );
+  ); */
   clip-path: polygon(
     50% 0%,
     100% 0,
