@@ -311,10 +311,13 @@ progress {
   }
   .menu a{display: none;}
   .logo{
-    padding-left: 110px;
+    padding-left: 70px;
   }
   .text{
     margin-left: 40px;
+  }
+  .c-btn {
+    margin-top: 10px;
   }
   .about-left {
     flex-basis: 100%;
@@ -402,7 +405,7 @@ progress {
   #menubar{
     position: fixed;
     top: 10px;
-    left: 30px;
+    left: 20px;
     width: 40px;
     cursor: pointer;
 
