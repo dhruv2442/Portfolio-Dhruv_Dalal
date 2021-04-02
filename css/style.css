@@ -433,7 +433,7 @@ progress {
 
 @media only screen and (max-device-width: 450px) {
   header {
-    background: white;
+    background: rgb(82, 196, 152);
     clip-path: none;
   }
   .menu a {
