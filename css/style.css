@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 #loading {
   position: fixed;
   width: 100%;
@@ -200,6 +203,7 @@ progress {
   padding-left: 80px;
   text-align: justify;
 }
+
 .edu-row {
   display: flex;
   justify-content: space-around;
@@ -219,6 +223,7 @@ progress {
   color: white;
   transition: 0.4s;
   transform: scale(1.1);
+  border:5px solid gold
 }
 .edu-box img {
   width: 60%;
@@ -421,6 +426,9 @@ progress {
     background: linear-gradient(70deg, rgb(226, 38, 38), rgb(201, 107, 107));
     border-radius: 25px;
   }
+  .edu-box:hover{
+    transform: none;
+  }
   #menubar {
     position: fixed;
     top: 10px;
@@ -504,6 +512,9 @@ progress {
   }
   .edu-box img {
     width: 60%;
+  }
+  .edu-box:hover{
+    transform: none;
   }
   .contact-left {
     flex-basis: 100%;
