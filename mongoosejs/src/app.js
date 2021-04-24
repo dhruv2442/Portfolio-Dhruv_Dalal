@@ -12,10 +12,13 @@ const contactUsSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
+    unique: true,
   },
   email: {
     type: String,
     required: true,
+    unique: true,
+    lowercase: true,
   },
   message: String,
 });
@@ -62,4 +65,14 @@ const getDocument = async () =>{
        console.log(err);
    }
 }
-getDocument();
+// getDocument();
+
+const getDocs= async()=>{
+  try{
+    const result =await  ContactUs.find({});
+    console.log(result);
+   }catch(err){
+       console.log(err);
+   }
+}
+// getDocs();
