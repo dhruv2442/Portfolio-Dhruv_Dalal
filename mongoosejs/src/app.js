@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
+const validator = require('validator');
 
 mongoose
   .connect("mongodb://localhost:27017/connectUs", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true
   })
   .then(() => console.log("connection successfull........"))
   .catch((err) => console.log(err));
@@ -13,12 +15,15 @@ const contactUsSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
+
   },
   email: {
     type: String,
     required: true,
     unique: true,
     lowercase: true,
+    
+    
   },
   message: String,
 });
