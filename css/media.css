@@ -127,7 +127,7 @@
       color: white;
     }
     .text h1 {
-      font-size: 30px;
+      font-size: 40px;
     }
     .text p {
       font-size: 20px;
@@ -243,7 +243,7 @@
     #menubar {
       position: fixed;
       top: 10px;
-      left: 50px;
+      left: 40px;
       width: 50px;
       cursor: pointer;
     }
