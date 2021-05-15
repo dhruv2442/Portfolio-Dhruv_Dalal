@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Dhruv Dalal | PortFolio</title>
   </head>
   <body onload="myFunction()">
@@ -42,7 +43,7 @@
           <a href="#edu">Education</a>
           <a href="#contact">Contact</a>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-down">
       <div class="section-info">
         <div class="heading">
           <hr />
@@ -66,7 +67,7 @@
         </div>
       </div>
     </section>
-    <section id="skills">
+    <section id="skills" data-aos="fade-down">
       <div class="section-info">
         <div class="heading">
           <hr style="background-color: white" />
@@ -116,7 +117,7 @@
       </div>
     </section>
 
-    <section id="edu">
+    <section id="edu" data-aos="fade-down">
       <div class="section-info">
         <div class="heading">
           <hr />
@@ -153,7 +154,7 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" data-aos="flip-right">
       <div class="section-info">
         <div class="heading">
           <hr />
@@ -189,7 +190,7 @@
     <section id="footer">
       <h2>
         <span>&copy;</span> Developed By Dhruv Dalal <br>|
-        <span><i class="fas fa-envelope"></i></span> dhruvdalal442002@gmail.com
+        <i class="fas fa-envelope"></i> dhruvdalal442002@gmail.com
       </h2>
       <div class="social-icons">
         <a
@@ -249,6 +250,12 @@
       }
       </script>
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300, // offset (in px) from the original trigger point
+        duration: 1300, // values from 0 to 3000, with step 50ms
+      });
+    </script>
   </body>
 </html>

@@ -111,7 +111,7 @@
   
   @media only screen and (max-device-width: 450px) {
     header {
-      background: rgb(82, 196, 152);
+      background: url("../img/mob_bg.jpg");
       clip-path: none;
     }
     .menu a {
@@ -124,7 +124,7 @@
     }
     .text {
       margin-left: 50px;
-      color: black;
+      color: white;
     }
     .text h1 {
       font-size: 30px;
@@ -138,12 +138,15 @@
     .section-info p {
       font-size: 20px;
     }
+    #about,#skills{
+      padding: 100px 25px;
+    }
     .about-left {
       flex-basis: 100%;
     }
     .about-left img {
       width: 100%;
-      padding: 50px;
+      padding: 20px;
     }
     .about-right {
       flex-basis: 100%;
@@ -243,6 +246,9 @@
       left: 50px;
       width: 50px;
       cursor: pointer;
+    }
+    #footer h2{
+      font-size: 20px;
     }
   }
   @media only screen and (max-width: 1100px) and (min-width: 768px) {
