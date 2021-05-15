@@ -223,10 +223,11 @@
       right: 0;
       width: 0px;
       height: 100vh;
-      background: rgba(11, 88, 11, 0.8);
+      background: rgba(11, 88, 11, 0.9);
       padding: 100px 0px;
       transition: 0.4s;
       display: block;
+      z-index: 9999;
     }
     #sidenav a {
       text-decoration: none;
