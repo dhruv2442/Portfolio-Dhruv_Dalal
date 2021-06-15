@@ -53,6 +53,9 @@
     .edu-box img {
       width: 60%;
     }
+    .card{
+      flex-basis: 70%;
+    }
     .contact-left {
       flex-basis: 100%;
     }
@@ -187,6 +190,9 @@
     .edu-box img {
       width: 60%;
     }
+    .card{
+      flex-basis: 100%;
+    }
     .edu-box:hover {
       transform: none;
     }
@@ -263,6 +269,9 @@
     }
     .logo {
       padding-left: 40px;
+    }
+    .card{
+      flex-basis: 40%;
     }
   }
   
