@@ -64,13 +64,13 @@ clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
   color: rgb(230, 87, 44);
 }
 .menu {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 .menu a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
-  margin: 5px;
+  margin: 4px;
   font-size: 20px;
   font-weight: bolder;
 }
@@ -119,6 +119,8 @@ nav {
 #edu,
 #contact {
   padding: 100px 50px;
+  border: none;
+  outline: none;
 }
 .section-info {
   font-weight: bold;
@@ -217,7 +219,7 @@ progress {
 .fa-heart{
  color: #FF0000;
 }
-#edu{
+#edu ,#edu2{
   background: #54a0ff;
   padding: 80px 50px;
 }
